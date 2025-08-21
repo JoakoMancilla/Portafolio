@@ -1,0 +1,50 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #090c1a;
+    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+}
+
+p{
+    color: #CBD5E1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagen img {
+  display: block;
+  max-height: 300px;
+  margin-bottom: 0;
+}
+
+h1, h2{
+    font-family: "Pixelify Sans", sans-serif; 
+    /*Animacion*/
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    animation: moveGradient 7s ease-in-out infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.vignette-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  z-index: 10;
+}
