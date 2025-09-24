@@ -9,6 +9,7 @@ export const Proyectos = () => {
 
         {/* Proyecto 1 */}
         <div className="group flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-[1.03]">
+          {/* Imagen */}
           <div className="relative w-full h-48 overflow-hidden shadow-lg vignette-img rounded-t-2xl">
             <img
               src="src/assets/proyectos/Aexpress.png"
@@ -16,8 +17,8 @@ export const Proyectos = () => {
               className="object-cover object-top w-full h-full duration-300 filter grayscale group-hover:filter-none transition-filter"
             />
           </div>
-
-          <div className="px-6 pt-6">
+          {/* Tecnologías */}
+          <div className="px-6 pt-6 flex-grow">
             <h4 className="mb-3 text-sm font-semibold tracking-wide text-gray-400 uppercase">
               Tecnologías usadas
             </h4>
@@ -30,7 +31,7 @@ export const Proyectos = () => {
               </span>
             </div>
           </div>
-
+          {/* Descripción y link */}
           <div className="flex flex-col gap-4 px-6 py-6">
             <h3 className="text-lg font-semibold text-gray-200">Diseño Web</h3>
             <p className="text-sm leading-relaxed text-gray-300">
@@ -46,6 +47,7 @@ export const Proyectos = () => {
 
         {/* Proyecto 2 */}
         <div className="group flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-[1.03]">
+          
           <div className="relative w-full h-48 overflow-hidden shadow-lg vignette-img rounded-t-2xl">
             <img
               src="src/assets/proyectos/PokeDexV4.png"
@@ -53,8 +55,8 @@ export const Proyectos = () => {
               className="object-cover object-top w-full h-full duration-300 filter grayscale group-hover:filter-none transition-filter"
             />
           </div>
-
-          <div className="px-6 pt-6">
+          
+          <div className="px-6 pt-6 flex-grow">
             <h4 className="mb-3 text-sm font-semibold tracking-wide text-gray-400 uppercase">
               Tecnologías usadas
             </h4>
@@ -73,7 +75,7 @@ export const Proyectos = () => {
               </span>
             </div>
           </div>
-
+          
           <div className="flex flex-col gap-4 px-6 py-6">
             <h3 className="text-lg font-semibold text-gray-200">Poke Dex</h3>
             <p className="text-sm leading-relaxed text-gray-300">
@@ -93,11 +95,11 @@ export const Proyectos = () => {
             <img
               src="src/assets/proyectos/Ejercito.png"
               alt="Imagen del Proyecto"
-             className="object-cover object-top w-full h-full duration-300 filter grayscale group-hover:filter-none transition-filter"
+              className="object-cover object-top w-full h-full duration-300 filter grayscale group-hover:filter-none transition-filter"
             />
           </div>
 
-          <div className="px-6 pt-6">
+          <div className="px-6 pt-6 flex-grow">
             <h4 className="mb-3 text-sm font-semibold tracking-wide text-gray-400 uppercase">
               Tecnologías usadas
             </h4>
