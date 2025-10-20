@@ -13,13 +13,13 @@ export const Footer = () => {
 
         {/* Íconos sociales */}
         <div className="flex gap-6 text-2xl">
-          <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" className="transition duration-300 transform hover:scale-125">
+          <a href="https://github.com/JoakoMancilla" target="_blank" rel="noopener noreferrer" className="transition duration-300 transform hover:scale-125">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" className="transition duration-300 transform hover:scale-125">
+          <a href="https://www.linkedin.com/in/joaquin-mancilla/" target="_blank" rel="noopener noreferrer" className="transition duration-300 transform hover:scale-125">
             <FaLinkedin />
           </a>
-          <a href="mailto:correo@ejemplo.com" className="transition duration-300 transform hover:scale-125">
+          <a href="mailto:JoakoMancillaVr@outlook.com" className="transition duration-300 transform hover:scale-125">
             <FaEnvelope />
           </a>
         </div>

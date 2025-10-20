@@ -1,9 +1,9 @@
 import React from 'react'
+import LowPoly from '../assets/LowPoly.svg';
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 
 const abrir = "<>"
 const cerrar = "</>"
-
 
 
 export const HeroSection = () => {
@@ -36,7 +36,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="flex items-center self-center gap-4 py-20">
-        <img className="w-48 sm:w-60 lg:w-[22rem] " src="./src/assets/LowPoly.svg" alt="Me" />
+        <img className="w-48 sm:w-60 lg:w-[22rem] " src={LowPoly} alt="Me" />
 
         <div className="relative p-6 m-8 border shadow-lg bg-gradient-to-br from-white/5 via-white/10 to-white/5 border-white/10 rounded-xl">
           <div className="absolute -top-4 bg-[#26133D] text-purple-400 border border-purple-500 text-xs px-3 py-1 rounded-full uppercase tracking-wider shadow-md">

@@ -1,4 +1,7 @@
 import React from 'react'
+import Aexpress from '../assets/Aexpress.png';
+import Ejercito from '../assets/Ejercito.png';
+import PokeDex from '../assets/PokeDexV4.png';
 
 export const Proyectos = () => {
   return (
@@ -12,7 +15,7 @@ export const Proyectos = () => {
           {/* Imagen */}
           <div className="relative w-full h-48 overflow-hidden shadow-lg vignette-img rounded-t-2xl">
             <img
-              src="src/assets/proyectos/Aexpress.png"
+              src={Aexpress}
               alt="Imagen del Proyecto"
               className="object-cover object-top w-full h-full duration-300 filter grayscale group-hover:filter-none transition-filter"
             />
@@ -50,7 +53,7 @@ export const Proyectos = () => {
           
           <div className="relative w-full h-48 overflow-hidden shadow-lg vignette-img rounded-t-2xl">
             <img
-              src="src/assets/proyectos/PokeDexV4.png"
+              src={PokeDex}
               alt="Imagen del Proyecto"
               className="object-cover object-top w-full h-full duration-300 filter grayscale group-hover:filter-none transition-filter"
             />
@@ -93,7 +96,7 @@ export const Proyectos = () => {
         <div className="group flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-[1.03]">
           <div className="relative w-full h-48 overflow-hidden shadow-lg vignette-img rounded-t-2xl">
             <img
-              src="src/assets/proyectos/Ejercito.png"
+              src={Ejercito}
               alt="Imagen del Proyecto"
               className="object-cover object-top w-full h-full duration-300 filter grayscale group-hover:filter-none transition-filter"
             />
