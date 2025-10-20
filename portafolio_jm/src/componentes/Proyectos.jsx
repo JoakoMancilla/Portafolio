@@ -38,7 +38,7 @@ export const Proyectos = () => {
               Sitio web desarrollado con WordPress y Divi para un proyecto comercial.
             </p>
             <div>
-              <a href="#" className="inline-block text-sm text-blue-400 transition duration-200 hover:text-blue-300 hover:underline">
+              <a href="https://aeropuertoexpress.cl/" className="inline-block text-sm text-blue-400 transition duration-200 hover:text-blue-300 hover:underline">
                 Ver proyecto →
               </a>
             </div>
@@ -82,7 +82,7 @@ export const Proyectos = () => {
               Proyecto de aprendizaje, utilizando APIs REST para obtener y mostrar datos.
             </p>
             <div>
-              <a href="#" className="inline-block text-sm text-blue-400 transition duration-200 hover:text-blue-300 hover:underline">
+              <a href="https://joakomancilla.github.io/Poke-Dex-React/" className="inline-block text-sm text-blue-400 transition duration-200 hover:text-blue-300 hover:underline">
                 Ver proyecto →
               </a>
             </div>
@@ -119,7 +119,7 @@ export const Proyectos = () => {
               Aplicación de Python en consultas a bases de datos no estructuradas.
             </p>
             <div>
-              <a href="#" className="inline-block text-sm text-blue-400 transition duration-200 hover:text-blue-300 hover:underline">
+              <a href="https://github.com/JoakoMancilla/CRUD-EJERCITO" className="inline-block text-sm text-blue-400 transition duration-200 hover:text-blue-300 hover:underline">
                 Ver proyecto →
               </a>
             </div>
