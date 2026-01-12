@@ -53,7 +53,7 @@ export const Proyectos = () => {
     image: Chocolate,
     description: 'Landing Page para pyme del rubro de la chocolatería.',
     techs: ['React', 'Tailwind', 'Javascript'],
-    link: '#'
+    link: 'https://github.com/JoakoMancilla/Landing-Chocolateria'
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ export const Proyectos = () => {
     image: AppSalud,
     description: 'Aplicación con control de sesiones y dashboard para profesionales de la salud.',
     techs: ['Python', 'Django', 'HTML'],
-    link: '#'
+    link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud'
   }
 ];
 
