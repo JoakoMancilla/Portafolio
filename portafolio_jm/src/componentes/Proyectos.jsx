@@ -1,4 +1,9 @@
 import { useState } from 'react';
+import Aexpress from '../assets/Aexpress.png';
+import PokeDex from '../assets/PokeDexV4.png';
+import Ejercito from '../assets/Ejercito.png';
+import Chocolate from '../assets/chocolate.png';
+import AppSalud from '../assets/AppSalud.png';
 
 export const Proyectos = () => {
 
@@ -18,42 +23,47 @@ export const Proyectos = () => {
   const [current, setCurrent] = useState(0);
 
   const proyectos = [
-    {
-      id: 1,
-      title: 'Diseño Web',
-      image: '/src/assets/Aexpress.png',
-      description: 'Sitio web desarrollado con WordPress y Divi para un proyecto comercial.',
-      techs: ['WordPress', 'Divi']
-    },
-    {
-      id: 2,
-      title: 'Poke Dex',
-      image: '/src/assets/PokeDexV4.png',
-      description: 'Proyecto de aprendizaje, utilizando APIs REST para obtener y mostrar datos.',
-      techs: ['React', 'Tailwind', 'Javascript', 'API Rest']
-    },
-    {
-      id: 3,
-      title: 'App DB Consola',
-      image: '/src/assets/Ejercito.png',
-      description: 'Aplicación de Python en consultas a bases de datos no estructuradas.',
-      techs: ['Python', 'MongoDB']
-    },
-    {
-      id: 4,
-      title: 'Tienda Chocolatería',
-      image: '/src/assets/chocolate.png',
-      description: 'Landing Page para pyme del rubro de la chocolatería.',
-      techs: ['React', 'Tailwind', 'Javascript']
-    },
-    {
-      id: 5,
-      title: 'App Gestión Sector Salud',
-      image: '/src/assets/AppSalud.png',
-      description: 'Aplicación con control de sesiones y dashboard para profesionales de la salud.',
-      techs: ['Python', 'Django', 'HTML']
-    }
-  ];
+  {
+    id: 1,
+    title: 'Diseño Web',
+    image: Aexpress,
+    description: 'Sitio web desarrollado con WordPress y Divi para un proyecto comercial.',
+    techs: ['WordPress', 'Divi'],
+    link: 'https://aeropuertoexpress.cl/'
+  },
+  {
+    id: 2,
+    title: 'Poke Dex',
+    image: PokeDex,
+    description: 'Proyecto de aprendizaje, utilizando APIs REST para obtener y mostrar datos.',
+    techs: ['React', 'Tailwind', 'Javascript', 'API Rest'],
+    link: 'https://joakomancilla.github.io/Poke-Dex-React/'
+  },
+  {
+    id: 3,
+    title: 'App DB Consola',
+    image: Ejercito,
+    description: 'Aplicación de Python en consultas a bases de datos no estructuradas.',
+    techs: ['Python', 'MongoDB'],
+    link: 'https://github.com/JoakoMancilla/CRUD-EJERCITO'
+  },
+  {
+    id: 4,
+    title: 'Tienda Chocolatería',
+    image: Chocolate,
+    description: 'Landing Page para pyme del rubro de la chocolatería.',
+    techs: ['React', 'Tailwind', 'Javascript'],
+    link: '#'
+  },
+  {
+    id: 5,
+    title: 'App Gestión Sector Salud',
+    image: AppSalud,
+    description: 'Aplicación con control de sesiones y dashboard para profesionales de la salud.',
+    techs: ['Python', 'Django', 'HTML'],
+    link: '#'
+  }
+];
 
   const leftIndex = current === 0 ? proyectos.length - 1 : current - 1;
   const rightIndex = current === proyectos.length - 1 ? 0 : current + 1;
@@ -140,6 +150,9 @@ export const Proyectos = () => {
                 <p className="text-sm leading-relaxed text-gray-300">
                   {proyecto.description}
                 </p>
+              </div>
+              <div className='m-4 p-4'>
+                <a href={proyecto.link} className="text-sm text-blue-400 transition duration-200 hover:text-blue-300 hover:underline"> Ver proyecto → </a>
               </div>
             </div>
           );
