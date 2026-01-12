@@ -44,7 +44,7 @@ export const HeroSection = () => {
           </div>
           <p className="text-lg font-light leading-relaxed text-gray-200">
             Soy estudiante de Ingeniería Informática, apasionado por la tecnología y el desarrollo de software.
-            Me enfoco en el desarrollo frontend y disfruto aprender de forma autodidacta, especialmente en la creación de videojuegos.
+            Me enfoco en el desarrollo FullStack y disfruto aprender de forma autodidacta, especialmente en la creación de videojuegos.
           </p>
         </div>
       </div>
