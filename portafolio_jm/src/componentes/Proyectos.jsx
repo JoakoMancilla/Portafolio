@@ -21,36 +21,36 @@ export const Proyectos = () => {
     {
       id: 1,
       title: 'Diseño Web',
-      image: 'src/assets/proyectos/Aexpress.png',
+      image: '/src/assets/Aexpress.png',
       description: 'Sitio web desarrollado con WordPress y Divi para un proyecto comercial.',
       techs: ['WordPress', 'Divi']
     },
     {
       id: 2,
       title: 'Poke Dex',
-      image: 'src/assets/proyectos/PokeDexV4.png',
+      image: '/src/assets/PokeDexV4.png',
       description: 'Proyecto de aprendizaje, utilizando APIs REST para obtener y mostrar datos.',
       techs: ['React', 'Tailwind', 'Javascript', 'API Rest']
     },
     {
       id: 3,
       title: 'App DB Consola',
-      image: 'src/assets/proyectos/Ejercito.png',
+      image: '/src/assets/Ejercito.png',
       description: 'Aplicación de Python en consultas a bases de datos no estructuradas.',
       techs: ['Python', 'MongoDB']
     },
     {
       id: 4,
-      title: 'Tienda Chocolateria',
-      image: 'src/assets/proyectos/chocolate.png',
-      description: 'Landing Page para pyme del rubro de la chocolateria.',
+      title: 'Tienda Chocolatería',
+      image: '/src/assets/chocolate.png',
+      description: 'Landing Page para pyme del rubro de la chocolatería.',
       techs: ['React', 'Tailwind', 'Javascript']
     },
     {
       id: 5,
       title: 'App Gestión Sector Salud',
-      image: 'src/assets/proyectos/AppSalud.png',
-      description: 'Aplicación con control de sesiones y dashboard pensada en los profesionales de la salud.',
+      image: '/src/assets/AppSalud.png',
+      description: 'Aplicación con control de sesiones y dashboard para profesionales de la salud.',
       techs: ['Python', 'Django', 'HTML']
     }
   ];
@@ -93,10 +93,13 @@ export const Proyectos = () => {
                 group flex flex-col bg-white/5 border border-white/10 rounded-2xl
                 overflow-hidden shadow-md
                 transition-all duration-500 ease-in-out
-                ${isCenter ? 'scale-100 opacity-100 translate-x-0 z-10' : index === 0 ? 'scale-90 opacity-50 -translate-x-4' : 'scale-90 opacity-50 translate-x-4'}
+                ${isCenter
+                  ? 'scale-100 opacity-100 translate-x-0 z-10'
+                  : index === 0
+                    ? 'scale-90 opacity-50 -translate-x-4'
+                    : 'scale-90 opacity-50 translate-x-4'}
               `}
             >
-              {/* Imagen */}
               <div className="relative w-full h-48 overflow-hidden rounded-t-2xl">
                 <img
                   src={proyecto.image}
@@ -110,7 +113,6 @@ export const Proyectos = () => {
                 />
               </div>
 
-              {/* Tecnologías */}
               <div className="px-6 pt-6 flex-grow">
                 <h4 className="mb-3 text-sm font-semibold tracking-wide text-gray-400 uppercase">
                   Tecnologías usadas
@@ -122,7 +124,6 @@ export const Proyectos = () => {
                       key={tech}
                       className={`
                         px-3 py-1 text-xs rounded-full border
-                        transition-colors duration-300
                         ${techStyles[tech] ?? 'text-gray-300 border-white/20 bg-white/5'}
                       `}
                     >
@@ -132,7 +133,6 @@ export const Proyectos = () => {
                 </div>
               </div>
 
-              {/* Texto */}
               <div className="flex flex-col gap-3 px-6 py-6">
                 <h3 className="text-lg font-semibold text-gray-200">
                   {proyecto.title}
@@ -141,7 +141,6 @@ export const Proyectos = () => {
                   {proyecto.description}
                 </p>
               </div>
-
             </div>
           );
         })}
