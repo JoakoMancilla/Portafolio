@@ -124,7 +124,7 @@ export const Proyectos = () => {
                   <h3 className="text-lg font-semibold text-gray-200">
                     {proyecto.title}
                   </h3>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-gray-300 line-clamp-2">
                     {proyecto.description}
                   </p>
                 </div>
@@ -194,7 +194,7 @@ export const Proyectos = () => {
                 <h3 className="text-lg font-semibold text-gray-200">
                   {proyecto.title}
                 </h3>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-300 line-clamp-2">
                   {proyecto.description}
                 </p>
               </div>
