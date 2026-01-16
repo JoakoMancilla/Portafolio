@@ -42,7 +42,7 @@ export const Contacto = () => {
         className="max-w-xl mx-auto space-y-6 "
       >
         <div>
-          <label htmlFor="name" className="block mb-1 text-sm font-medium">
+          <label htmlFor="name" className="block mb-1 text-sm font-medium w-fit px-3 py-1 rounded-full border text-purple-400 border-purple-500 bg-purple-900/30">
             Nombre
           </label>
           <input
@@ -56,7 +56,7 @@ export const Contacto = () => {
         </div>
 
         <div>
-          <label htmlFor="email" className="block mb-1 text-sm font-medium">
+          <label htmlFor="email" className="block mb-1 text-sm font-medium w-fit px-3 py-1 rounded-full border text-purple-400 border-purple-500 bg-purple-900/30">
             Correo electrónico
           </label>
           <input
@@ -70,7 +70,7 @@ export const Contacto = () => {
         </div>
 
         <div>
-          <label htmlFor="message" className="block mb-1 text-sm font-medium">
+          <label htmlFor="message" className="block mb-1 text-sm font-medium w-fit px-3 py-1 rounded-full border text-purple-400 border-purple-500 bg-purple-900/30">
             Mensaje
           </label>
           <textarea
