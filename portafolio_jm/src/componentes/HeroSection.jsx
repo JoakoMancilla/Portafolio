@@ -1,6 +1,8 @@
 import React from 'react';
 import LowPoly from '../assets/LowPoly.svg';
-import { SiGithub, SiLinkedin } from 'react-icons/si';
+import cvPdf from '../assets/CV_Joaquin_Mancilla_2026.pdf';
+import { SiGithub, SiLinkedin} from 'react-icons/si';
+import { HiOutlineDocumentText} from 'react-icons/hi';
 
 const abrir = '<>';
 const cerrar = '</>';
@@ -38,6 +40,20 @@ export const HeroSection = () => {
             >
               <SiLinkedin />
             </a>
+            <a
+              href={cvPdf}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Descargar CV"
+              className="flex items-center gap-0.5 text-2xl sm:text-3xl text-gray-400 transition hover:text-white"
+            >
+              <HiOutlineDocumentText />
+              <span className="text-xs sm:text-sm font-bold tracking-wide leading-none">
+                CV
+              </span>
+            </a>
+
           </div>
         </div>
       </div>
