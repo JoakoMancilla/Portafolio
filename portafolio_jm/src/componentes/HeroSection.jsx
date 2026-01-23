@@ -12,7 +12,7 @@ export const HeroSection = () => {
       {/* Título principal */}
       <div className="text-left">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-[#c522a2] via-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent leading-tight">
-          Hi, I'm Joaquin Mancilla. <br />
+          Hi, I'm Joaquín Mancilla. <br />
           Software Engineer
         </h1>
 
