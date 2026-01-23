@@ -17,8 +17,8 @@ export const HeroSection = () => {
         </h1>
 
         {/* Subtítulo + iconos */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4 pt-8">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-medium bg-gradient-to-r from-[#c522a2] via-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent mb-3 sm:mb-0">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4 pt-2 md:pt-8">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-medium bg-gradient-to-r from-[#c522a2] via-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent mb-3 sm:mb-0 hidden sm:block">
             {abrir} Este no es el bug que estás buscando. {cerrar}
           </h2>
 
@@ -27,7 +27,7 @@ export const HeroSection = () => {
               href="https://github.com/JoakoMancilla"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl sm:text-3xl text-gray-400 transition hover:text-white"
+              className="text-2xl sm:text-3xl text-gray-400 transition hover:text-white hover:scale-110"
             >
               <SiGithub />
             </a>
@@ -35,7 +35,7 @@ export const HeroSection = () => {
               href="https://www.linkedin.com/in/joaqu%C3%ADn-mancilla-99332a344/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl sm:text-3xl text-gray-400 transition hover:text-white"
+              className="text-2xl sm:text-3xl text-gray-400 transition hover:text-white hover:scale-110"
             >
               <SiLinkedin />
             </a>
@@ -45,7 +45,7 @@ export const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               title="Descargar CV"
-              className="flex items-center gap-0.5 text-gray-400 transition hover:text-white"
+              className="flex items-center gap-0.5 text-gray-400 transition hover:text-white hover:scale-110"
             >
               <HiDocumentText className="text-3xl sm:text-4xl -mt-0.5" />
               <span className="text-xs sm:text-sm font-bold tracking-wide leading-none">
