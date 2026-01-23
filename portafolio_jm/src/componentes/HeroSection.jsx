@@ -1,6 +1,5 @@
 import React from 'react';
 import LowPoly from '../assets/LowPoly.svg';
-import cvPdf from '../assets/CV_Joaquin_Mancilla_2026.pdf';
 import { SiGithub, SiLinkedin} from 'react-icons/si';
 import { HiOutlineDocumentText} from 'react-icons/hi';
 
@@ -41,7 +40,7 @@ export const HeroSection = () => {
               <SiLinkedin />
             </a>
             <a
-              href={cvPdf}
+              href='CV_Joaquin_Mancilla_2026.pdf'
               download
               target="_blank"
               rel="noopener noreferrer"
