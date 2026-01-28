@@ -1,4 +1,9 @@
-import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+
 import Aexpress from '../assets/Aexpress.png';
 import PokeDex from '../assets/PokeDexV4.png';
 import Ejercito from '../assets/Ejercito.png';
@@ -20,156 +25,66 @@ export const Proyectos = () => {
     HTML: 'text-orange-400 border-orange-500 bg-orange-900/30',
   };
 
-  const [current, setCurrent] = useState(0);
-
   const proyectos = [
-    {
-      id: 1,
-      title: 'Diseño Web',
-      image: Aexpress,
-      description: 'Sitio web desarrollado con WordPress y Divi para un proyecto comercial.',
-      techs: ['WordPress', 'Divi'],
-      link: 'https://aeropuertoexpress.cl/'
-    },
-    {
-      id: 2,
-      title: 'Poke Dex',
-      image: PokeDex,
-      description: 'Proyecto de aprendizaje, utilizando APIs REST para obtener y mostrar datos.',
-      techs: ['React', 'Tailwind', 'Javascript', 'API Rest'],
-      link: 'https://joakomancilla.github.io/Poke-Dex-React/'
-    },
-    {
-      id: 3,
-      title: 'App DB Consola',
-      image: Ejercito,
-      description: 'Aplicación de Python en consultas a bases de datos no estructuradas.',
-      techs: ['Python', 'MongoDB'],
-      link: 'https://github.com/JoakoMancilla/CRUD-EJERCITO'
-    },
-    {
-      id: 4,
-      title: 'Tienda Chocolatería',
-      image: Chocolate,
-      description: 'Landing Page para pyme del rubro de la chocolatería.',
-      techs: ['React', 'Tailwind', 'Javascript'],
-      link: 'https://github.com/JoakoMancilla/Landing-Chocolateria'
-    },
-    {
-      id: 5,
-      title: 'App Gestión Sector Salud',
-      image: AppSalud,
-      description: 'Aplicación con control de sesiones y dashboard para profesionales de la salud.',
-      techs: ['Python', 'Django', 'HTML'],
-      link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud'
-    }
-  ];
-
-  const leftIndex = current === 0 ? proyectos.length - 1 : current - 1;
-  const rightIndex = current === proyectos.length - 1 ? 0 : current + 1;
-
-  const visibleProjects = [
-    proyectos[leftIndex],
-    proyectos[current],
-    proyectos[rightIndex],
+    { id: 1, title: 'Diseño Web', image: Aexpress, description: 'Sitio web desarrollado con WordPress y Divi.', techs: ['WordPress', 'Divi'], link: 'https://aeropuertoexpress.cl/' },
+    { id: 2, title: 'Poke Dex', image: PokeDex, description: 'Proyecto en React usando APIs REST.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://joakomancilla.github.io/Poke-Dex-React/' },
+    { id: 3, title: 'App DB Consola', image: Ejercito, description: 'Aplicación Python con MongoDB.', techs: ['Python', 'MongoDB'], link: 'https://github.com/JoakoMancilla/CRUD-EJERCITO' },
+    { id: 4, title: 'Tienda Chocolatería', image: Chocolate, description: 'Landing Page para pyme.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://github.com/JoakoMancilla/Landing-Chocolateria' },
+    { id: 5, title: 'App Gestión Salud', image: AppSalud, description: 'Dashboard con control de sesiones.', techs: ['Python', 'Django', 'HTML'], link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud' },
   ];
 
   return (
-    <div id="projects" className="relative px-6 py-12">
+    <section id="projects" className="px-6 py-16">
       <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#c522a2] via-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent">
         Mis Proyectos
       </h2>
 
-      {/* Botón Izquierda */}
-      <button
-        onClick={() => setCurrent(current === 0 ? proyectos.length - 1 : current - 1)}
-        className="absolute left-2 sm:-left-6 top-1/2 -translate-y-1/2 z-10 text-3xl text-white/60 hover:text-white transition"
+      <Swiper
+        effect="coverflow"
+        centeredSlides
+        grabCursor
+        loop
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: -20,
+          depth: 120,
+          modifier: 1,
+          slideShadows: true,
+        }}
+
+        // 👇 AQUÍ ESTÁ LA MAGIA
+        breakpoints={{
+          0: {
+            slidesPerView: 1,   // teléfonos
+          },
+          640: {
+            slidesPerView: 1,   // móviles grandes
+          },
+          768: {
+            slidesPerView: 2,   // tablets
+          },
+          1024: {
+            slidesPerView: 3,  // desktop
+          },
+        }}
+
+        modules={[EffectCoverflow, Autoplay]}
+        className="py-16 md:py-28"
       >
-        ‹
-      </button>
+        {proyectos.map((proyecto) => (
+          <SwiperSlide key={proyecto.id}>
+            <article className="flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl shadow-md overflow-hidden">
 
-      {/* MOBILE — 1 PROYECTO */}
-      <div className="block sm:hidden">
-        <div className="max-w-sm mx-auto">
-          {(() => {
-            const proyecto = proyectos[current];
-            return (
-              <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-md">
-                <div className="h-48">
-                  <img
-                    src={proyecto.image}
-                    alt={proyecto.title}
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-
-                <div className="px-6 pt-6">
-                  <h4 className="mb-3 text-sm font-semibold text-gray-400 uppercase">
-                    Tecnologías usadas
-                  </h4>
-
-                  <div className="flex flex-wrap gap-2">
-                    {proyecto.techs.map((tech) => (
-                      <span
-                        key={tech}
-                        className={`px-3 py-1 text-xs rounded-full border ${techStyles[tech]}`}
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="px-6 py-6">
-                  <h3 className="text-lg font-semibold text-gray-200">
-                    {proyecto.title}
-                  </h3>
-                  <p className="text-sm text-gray-300 line-clamp-2">
-                    {proyecto.description}
-                  </p>
-                </div>
-
-                <div className="m-4">
-                  <a
-                    href={proyecto.link}
-                    className="text-sm text-blue-400 hover:underline"
-                  >
-                    Ver proyecto →
-                  </a>
-                </div>
-              </div>
-            );
-          })()}
-        </div>
-      </div>
-
-      {/* DESKTOP — 3 PROYECTOS */}
-      <div className="hidden sm:grid grid-cols-3 gap-6 items-center">
-        {visibleProjects.map((proyecto, index) => {
-          const isCenter = index === 1;
-
-          return (
-            <div
-              key={proyecto.id}
-              className={`
-                group flex flex-col bg-white/5 border border-white/10 rounded-2xl
-                overflow-hidden shadow-md transition-all duration-500
-                ${isCenter
-                  ? 'scale-100 opacity-100 z-10'
-                  : index === 0
-                    ? 'scale-90 opacity-50 -translate-x-4'
-                    : 'scale-90 opacity-50 translate-x-4'}
-              `}
-            >
-              <div className="relative h-48">
+              <div className="h-48 overflow-hidden rounded-t-2xl">
                 <img
                   src={proyecto.image}
                   alt={proyecto.title}
-                  className={`
-                    w-full h-full object-cover object-top transition
-                    ${isCenter ? 'grayscale-0' : 'grayscale'}
-                    group-hover:grayscale-0
-                  `}
+                  className="w-full h-full object-cover"
                 />
               </div>
 
@@ -177,7 +92,6 @@ export const Proyectos = () => {
                 <h4 className="mb-3 text-sm font-semibold text-gray-400 uppercase">
                   Tecnologías usadas
                 </h4>
-
                 <div className="flex flex-wrap gap-2">
                   {proyecto.techs.map((tech) => (
                     <span
@@ -199,7 +113,7 @@ export const Proyectos = () => {
                 </p>
               </div>
 
-              <div className="m-4">
+              <div className="my-4 mx-6">
                 <a
                   href={proyecto.link}
                   className="text-sm text-blue-400 hover:underline"
@@ -207,18 +121,10 @@ export const Proyectos = () => {
                   Ver proyecto →
                 </a>
               </div>
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Botón Derecha */}
-      <button
-        onClick={() => setCurrent(current === proyectos.length - 1 ? 0 : current + 1)}
-        className="absolute right-2 sm:-right-6 top-1/2 -translate-y-1/2 z-10 text-3xl text-white/60 hover:text-white transition"
-      >
-        ›
-      </button>
-    </div>
+            </article>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };
