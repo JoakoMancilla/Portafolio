@@ -11,14 +11,19 @@ import { Contacto } from '../componentes/contacto'
 export const Home = () => {
   return (
     <>
-    <Header/>
-    <div className='md:px-16 lg:px-24 xl:px-48 2xl:px-96'>
-      <div className='pb-24'><HeroSection/></div>
-      <div className='pb-24'><Proyectos/></div>
-      <div className='pb-24'><Tecnologias/></div>
-      <div className='pb-12'><Contacto/></div>
-    </div>
-    <Footer/>
+      <Header />
+
+      <main className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+        <HeroSection />
+
+        <div className="space-y-16 lg:space-y-24 mt-16 lg:mt-24">
+          <Proyectos />
+          <Tecnologias />
+          <Contacto />
+        </div>
+      </main>
+
+      <Footer />
     </>
   )
 }
