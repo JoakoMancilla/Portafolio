@@ -9,6 +9,7 @@ import PokeDex from '../assets/PokeDexV4.png';
 import Ejercito from '../assets/Ejercito.png';
 import Chocolate from '../assets/chocolate.png';
 import AppSalud from '../assets/AppSalud.png';
+import Game2D from '../assets/Game2D.png';
 
 export const Proyectos = () => {
 
@@ -23,14 +24,18 @@ export const Proyectos = () => {
     MongoDB: 'text-green-400 border-green-500 bg-green-900/30',
     Django: 'text-green-600 border-green-700 bg-green-900/30',
     HTML: 'text-orange-400 border-orange-500 bg-orange-900/30',
+    Unity: 'text-neutral-200 border-neutral-400 bg-neutral-900/50',
+    'C#': 'text-violet-400 border-violet-500 bg-violet-900/30'
   };
 
   const proyectos = [
-    { id: 1, title: 'Diseño Web', image: Aexpress, description: 'Sitio web desarrollado con WordPress y Divi.', techs: ['WordPress', 'Divi'], link: 'https://aeropuertoexpress.cl/' },
-    { id: 2, title: 'Poke Dex', image: PokeDex, description: 'Proyecto en React usando APIs REST.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://joakomancilla.github.io/Poke-Dex-React/' },
+    { id: 1, title: 'Liminal ROBOT - VideoGame', image: Game2D, description: 'Videojuego 2D en Unity/C#, con sistema de movimiento, enemigos y combate.', techs: ['Unity', 'C#'], link: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity' },
+    { id: 2, title: 'Diseño Web', image: Aexpress, description: 'Sitio web desarrollado con WordPress y Divi.', techs: ['WordPress', 'Divi'], link: 'https://aeropuertoexpress.cl/' },
     { id: 3, title: 'App DB Consola', image: Ejercito, description: 'Aplicación Python con MongoDB.', techs: ['Python', 'MongoDB'], link: 'https://github.com/JoakoMancilla/CRUD-EJERCITO' },
-    { id: 4, title: 'Tienda Chocolatería', image: Chocolate, description: 'Landing Page para pyme.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://github.com/JoakoMancilla/Landing-Chocolateria' },
-    { id: 5, title: 'App Gestión Salud', image: AppSalud, description: 'Dashboard con control de sesiones.', techs: ['Python', 'Django', 'HTML'], link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud' },
+    { id: 4, title: 'Poke Dex', image: PokeDex, description: 'Proyecto en React usando APIs REST.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://joakomancilla.github.io/Poke-Dex-React/' },
+    { id: 5, title: 'Tienda Chocolatería', image: Chocolate, description: 'Landing Page para pyme.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://github.com/JoakoMancilla/Landing-Chocolateria' },
+    { id: 6, title: 'App Gestión Salud', image: AppSalud, description: 'Dashboard con control de sesiones.', techs: ['Python', 'Django', 'HTML'], link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud' },
+
   ];
 
   return (
@@ -57,7 +62,7 @@ export const Proyectos = () => {
           slideShadows: true,
         }}
 
-        // 👇 AQUÍ ESTÁ LA MAGIA
+        // RESPONSIVE
         breakpoints={{
           0: {
             slidesPerView: 1,   // teléfonos
