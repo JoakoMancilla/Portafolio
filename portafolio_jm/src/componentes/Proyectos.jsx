@@ -10,6 +10,7 @@ import Ejercito from '../assets/Ejercito.png';
 import Chocolate from '../assets/chocolate.png';
 import AppSalud from '../assets/AppSalud.png';
 import Game2D from '../assets/Game2D.png';
+import Game3D from '../assets/Game3D.png';
 
 export const Proyectos = () => {
 
@@ -29,13 +30,68 @@ export const Proyectos = () => {
   };
 
   const proyectos = [
-    { id: 1, title: 'Liminal ROBOT - VideoGame', image: Game2D, description: 'Videojuego 2D en Unity/C#, con sistema de movimiento, enemigos y combate.', techs: ['Unity', 'C#'], link: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity' },
-    { id: 2, title: 'Diseño Web', image: Aexpress, description: 'Sitio web desarrollado con WordPress y Divi.', techs: ['WordPress', 'Divi'], link: 'https://aeropuertoexpress.cl/' },
-    { id: 3, title: 'App DB Consola', image: Ejercito, description: 'Aplicación Python con MongoDB.', techs: ['Python', 'MongoDB'], link: 'https://github.com/JoakoMancilla/CRUD-EJERCITO' },
-    { id: 4, title: 'Poke Dex', image: PokeDex, description: 'Proyecto en React usando APIs REST.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://joakomancilla.github.io/Poke-Dex-React/' },
-    { id: 5, title: 'Tienda Chocolatería', image: Chocolate, description: 'Landing Page para pyme.', techs: ['React', 'Tailwind', 'Javascript'], link: 'https://github.com/JoakoMancilla/Landing-Chocolateria' },
-    { id: 6, title: 'App Gestión Salud', image: AppSalud, description: 'Dashboard con control de sesiones.', techs: ['Python', 'Django', 'HTML'], link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud' },
+    {
+      id: 1,
+      title: 'Liminal ROBOT - VideoGame',
+      image: Game2D,
+      description: 'Plataformero 2D en Unity donde controlas un robot explorando un entorno liminal con físicas, enemigos y sistema básico de combate.',
+      techs: ['Unity', 'C#'],
+      link: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity'
+    },
 
+    {
+      id: 2,
+      title: 'Diseño Web',
+      image: Aexpress,
+      description: 'Sitio corporativo para empresa de transporte, desarrollado en WordPress con Divi, enfocado en servicios, contacto y reservas.',
+      techs: ['WordPress', 'Divi'],
+      link: 'https://aeropuertoexpress.cl/'
+    },
+
+    {
+      id: 3,
+      title: 'App DB Consola',
+      image: Ejercito,
+      description: 'Aplicación de consola en Python con MongoDB que permite registrar, buscar, editar y eliminar datos mediante operaciones CRUD.',
+      techs: ['Python', 'MongoDB'],
+      link: 'https://github.com/JoakoMancilla/CRUD-EJERCITO'
+    },
+
+    {
+      id: 4,
+      title: 'Poke Dex',
+      image: PokeDex,
+      description: 'Pokédex interactiva en React que consume una API REST para buscar Pokémon y mostrar estadísticas e información detallada.',
+      techs: ['React', 'Tailwind', 'Javascript'],
+      link: 'https://joakomancilla.github.io/Poke-Dex-React/'
+    },
+
+    {
+      id: 5,
+      title: 'Tienda Chocolatería',
+      image: Chocolate,
+      description: 'Landing page para una chocolatería con catálogo visual de productos, diseño responsive y enfoque en presentación comercial.',
+      techs: ['React', 'Tailwind', 'Javascript'],
+      link: 'https://github.com/JoakoMancilla/Landing-Chocolateria'
+    },
+
+    {
+      id: 6,
+      title: 'App Gestión Salud',
+      image: AppSalud,
+      description: 'Sistema web en Django para gestión de usuarios y sesiones médicas, con autenticación y panel de administración.',
+      techs: ['Python', 'Django', 'HTML'],
+      link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud'
+    },
+
+    {
+      id: 7,
+      title: 'Last Stand Outpost - VideoGame',
+      image: Game3D,
+      description: 'Shooter 3D en Unity ambientado en una base militar infestada de zombies, con disparos, IA enemiga y supervivencia por oleadas.',
+      techs: ['Unity', 'C#'],
+      link: 'https://github.com/JoakoMancilla/3D-Videogame---Zombie-Shooter'
+    },
   ];
 
   return (
