@@ -11,6 +11,7 @@ import Chocolate from '../assets/chocolate.png';
 import AppSalud from '../assets/AppSalud.png';
 import Game2D from '../assets/Game2D.png';
 import Game3D from '../assets/Game3D.png';
+import Agente from '../assets/Agente.png';
 
 export const Proyectos = () => {
 
@@ -26,19 +27,21 @@ export const Proyectos = () => {
     Django: 'text-green-600 border-green-700 bg-green-900/30',
     HTML: 'text-orange-400 border-orange-500 bg-orange-900/30',
     Unity: 'text-neutral-200 border-neutral-400 bg-neutral-900/50',
-    'C#': 'text-violet-400 border-violet-500 bg-violet-900/30'
+    'C#': 'text-violet-400 border-violet-500 bg-violet-900/30',
+    Langchain: 'text-teal-400 border-teal-500 bg-teal-900/30',
+    LLM: 'text-purple-400 border-purple-500 bg-purple-900/30',
+    RAG: 'text-indigo-400 border-indigo-500 bg-indigo-900/30',
   };
 
   const proyectos = [
     {
       id: 1,
-      title: 'Liminal ROBOT - VideoGame',
-      image: Game2D,
-      description: 'Plataformero 2D en Unity donde controlas un robot explorando un entorno liminal con físicas, enemigos y sistema básico de combate.',
-      techs: ['Unity', 'C#'],
-      link: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity'
+      title: 'Agente de IA',
+      image: Agente,
+      description: 'Agente de IA basado en el LLM Gemini, con implementacion de Tools, Memory y futura implementacion de RAG',
+      techs: ['Python', 'Langchain','LLM','RAG'],
+      link: 'https://github.com/JoakoMancilla/IA-Agent'
     },
-
     {
       id: 2,
       title: 'Diseño Web',
@@ -91,6 +94,14 @@ export const Proyectos = () => {
       description: 'Shooter 3D en Unity ambientado en una base militar infestada de zombies, con disparos, IA enemiga y supervivencia por oleadas.',
       techs: ['Unity', 'C#'],
       link: 'https://github.com/JoakoMancilla/3D-Videogame---Zombie-Shooter'
+    },
+    {
+      id: 8,
+      title: 'Liminal ROBOT - VideoGame',
+      image: Game2D,
+      description: 'Plataformero 2D en Unity donde controlas un robot explorando un entorno liminal con físicas, enemigos y sistema básico de combate.',
+      techs: ['Unity', 'C#'],
+      link: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity'
     },
   ];
 
