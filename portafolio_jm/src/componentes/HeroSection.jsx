@@ -70,8 +70,7 @@ export const HeroSection = () => {
             Sobre mí
           </div>
           <p className="text-base sm:text-lg font-light leading-relaxed text-gray-200">
-            Desarrollador Full Stack / AI Engineer con experiencia en soluciones basadas en Inteligencia Artificial. Diseño e implemento agentes LLM con LangChain (StateGraph y Functional API), sistemas RAG con embeddings y APIs REST con FastAPI, integrándolas con interfaces frontend. Trabajo bajo metodologías ágiles (Scrum) y colaboro en código con Pull Requests y Git.
-          </p>
+            Desarrollador Full Stack especializado en IA. Desarrollo aplicaciones web modernas con React y FastAPI, además de diseñar agentes LLM, sistemas RAG e integraciones con modelos de lenguaje para automatizar procesos y crear soluciones de negocio.          </p>
         </div>
       </div>
     </section>

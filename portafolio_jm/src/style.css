@@ -9,9 +9,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.swiper-wrapper {
+  align-items: stretch;
+}
+
 .swiper-slide {
   opacity: 0.5;
   transition: all 0.4s ease;
+  height: auto !important;
 }
 
 .swiper-slide-active {
