@@ -13,7 +13,7 @@ export const HeroSection = () => {
       <div className="text-left">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-[#c522a2] via-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent leading-tight">
           Hi, I'm Joaquín Mancilla. <br />
-          Software Engineer
+          Full Stack / AI Engineer
         </h1>
 
         {/* Subtítulo + iconos */}
@@ -40,7 +40,7 @@ export const HeroSection = () => {
               <SiLinkedin />
             </a>
             <a
-              href='CV_Joaquin_Mancilla_2026.pdf'
+              href='CV_JoaquinMancilla2026_IA_Engineer.pdf'
               download
               target="_blank"
               rel="noopener noreferrer"
@@ -70,8 +70,7 @@ export const HeroSection = () => {
             Sobre mí
           </div>
           <p className="text-base sm:text-lg font-light leading-relaxed text-gray-200">
-            Desarrollador FullStack y Analista Programador, apasionado por la tecnología y el desarrollo de software.
-            Me especializo en el desarrollo web y disfruto aprender de forma autodidacta, especialmente en la creación de videojuegos y nuevas tecnologías.
+            Desarrollador Full Stack / AI Engineer con experiencia en soluciones basadas en Inteligencia Artificial. Diseño e implemento agentes LLM con LangChain (StateGraph y Functional API), sistemas RAG con embeddings y APIs REST con FastAPI, integrándolas con interfaces frontend. Trabajo bajo metodologías ágiles (Scrum) y colaboro en código con Pull Requests y Git.
           </p>
         </div>
       </div>
