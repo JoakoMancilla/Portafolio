@@ -40,7 +40,7 @@ export const HeroSection = () => {
               <SiLinkedin />
             </a>
             <a
-              href='CV_Joaquin_Mancilla_2026.pdf'
+              href='CV_JoaquinMancilla2026_IA_Engineer.pdf'
               download
               target="_blank"
               rel="noopener noreferrer"
@@ -70,9 +70,7 @@ export const HeroSection = () => {
             Sobre mí
           </div>
           <p className="text-base sm:text-lg font-light leading-relaxed text-gray-200">
-            Desarrollador FullStack y Analista Programador, apasionado por la tecnología y el desarrollo de software.
-            Me especializo en el desarrollo web y disfruto aprender de forma autodidacta, especialmente en la creación de videojuegos y nuevas tecnologías.
-          </p>
+            Desarrollador Full Stack especializado en IA. Desarrollo aplicaciones web modernas con React y FastAPI, además de diseñar agentes LLM, sistemas RAG e integraciones con modelos de lenguaje para automatizar procesos y crear soluciones de negocio.          </p>
         </div>
       </div>
     </section>

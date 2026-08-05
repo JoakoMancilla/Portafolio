@@ -14,9 +14,8 @@ export const Home = () => {
       <Header />
 
       <main className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <HeroSection />
-
-        <div className="space-y-16 lg:space-y-24 mt-16 lg:mt-24">
+        <div className="space-y-16 lg:space-y-24">
+          <HeroSection />
           <Proyectos />
           <Tecnologias />
           <Contacto />

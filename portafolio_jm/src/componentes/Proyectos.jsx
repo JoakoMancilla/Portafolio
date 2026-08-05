@@ -4,6 +4,9 @@ import { EffectCoverflow, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 
+import { SiGithub } from 'react-icons/si';
+import { HiExternalLink } from 'react-icons/hi';
+
 import Aexpress from '../assets/Aexpress.png';
 import PokeDex from '../assets/PokeDexV4.png';
 import Ejercito from '../assets/Ejercito.png';
@@ -45,7 +48,7 @@ export const Proyectos = () => {
       image: Agente,
       description: 'Agente de IA integrado en arquitectura multiagente, construido sobre Fireworks LLM con capacidades de Tools, Memory persistente y RAG para recuperación de contexto enriquecido',
       techs: ['Python', 'LangChain','LangGraph','RAG'],
-      link: 'https://github.com/JoakoMancilla/IA-Agent'
+      github: 'https://github.com/JoakoMancilla/IA-Agent',
     },
     {
       id: 2,
@@ -53,52 +56,48 @@ export const Proyectos = () => {
       image: Aexpress,
       description: 'Sitio corporativo para empresa de transporte, desarrollado en WordPress con Divi, enfocado en servicios, contacto y reservas.',
       techs: ['WordPress', 'Divi'],
-      link: 'https://aeropuertoexpress.cl/'
+      demo: 'https://aeropuertoexpress.cl/',
     },
-
     {
       id: 3,
       title: 'App DB Consola',
       image: Ejercito,
       description: 'Aplicación de consola en Python con MongoDB que permite registrar, buscar, editar y eliminar datos mediante operaciones CRUD.',
       techs: ['Python', 'MongoDB'],
-      link: 'https://github.com/JoakoMancilla/CRUD-EJERCITO'
+      github: 'https://github.com/JoakoMancilla/CRUD-EJERCITO',
     },
-
     {
       id: 4,
       title: 'Poke Dex',
       image: PokeDex,
       description: 'Pokédex interactiva en React que consume una API REST para buscar Pokémon y mostrar estadísticas e información detallada.',
       techs: ['React', 'Tailwind', 'Javascript'],
-      link: 'https://joakomancilla.github.io/Poke-Dex-React/'
+      demo: 'https://joakomancilla.github.io/Poke-Dex-React/',
+      github: 'https://github.com/JoakoMancilla/Poke-Dex-React'
     },
-
     {
       id: 5,
       title: 'Tienda Chocolatería',
       image: Chocolate,
       description: 'Landing page para una chocolatería con catálogo visual de productos, diseño responsive y enfoque en presentación comercial.',
       techs: ['React', 'Tailwind', 'Javascript'],
-      link: 'https://github.com/JoakoMancilla/Landing-Chocolateria'
+      github: 'https://github.com/JoakoMancilla/Landing-Chocolateria',
     },
-
     {
       id: 6,
       title: 'App Gestión Salud',
       image: AppSalud,
       description: 'Sistema web en Django para gestión de usuarios y sesiones médicas, con autenticación y panel de administración.',
       techs: ['Python', 'Django', 'HTML'],
-      link: 'https://github.com/JoakoMancilla/Proyecto_AppSalud'
+      github: 'https://github.com/JoakoMancilla/Proyecto_AppSalud',
     },
-
     {
       id: 7,
       title: 'Last Stand Outpost - VideoGame',
       image: Game3D,
       description: 'Shooter 3D en Unity ambientado en una base militar infestada de zombies, con disparos, IA enemiga y supervivencia por oleadas.',
       techs: ['Unity', 'C#'],
-      link: 'https://github.com/JoakoMancilla/3D-Videogame---Zombie-Shooter'
+      github: 'https://github.com/JoakoMancilla/3D-Videogame---Zombie-Shooter',
     },
     {
       id: 8,
@@ -106,7 +105,7 @@ export const Proyectos = () => {
       image: Game2D,
       description: 'Plataformero 2D en Unity donde controlas un robot explorando un entorno liminal con físicas, enemigos y sistema básico de combate.',
       techs: ['Unity', 'C#'],
-      link: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity'
+      github: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity',
     },
     {
       id: 9,
@@ -114,7 +113,7 @@ export const Proyectos = () => {
       image: Ticket,
       description: 'Sistema de gestión de tickets (helpdesk) con Laravel 13, React 19 y Tailwind CSS v4 orquestado con Docker.',
       techs: ['Laravel', 'React', 'MariaDB', 'Docker'],
-      link: 'https://github.com/JoakoMancilla/TicketFlow-MVP'
+      github: 'https://github.com/JoakoMancilla/TicketFlow-MVP',
     },
   ];
 
@@ -129,6 +128,8 @@ export const Proyectos = () => {
         centeredSlides
         grabCursor
         loop
+        preventClicks={false}
+        preventClicksOnPropagation={false}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
@@ -141,28 +142,25 @@ export const Proyectos = () => {
           modifier: 1,
           slideShadows: true,
         }}
-
-        // RESPONSIVE
         breakpoints={{
           0: {
-            slidesPerView: 1,   // teléfonos
+            slidesPerView: 1,
           },
           640: {
-            slidesPerView: 1,   // móviles grandes
+            slidesPerView: 1,
           },
           768: {
-            slidesPerView: 2,   // tablets
+            slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 3,  // desktop
+            slidesPerView: 3,
           },
         }}
-
         modules={[EffectCoverflow, Autoplay]}
-        className="py-16 md:py-28"
+        className="px-8 md:px-16 py-16 md:py-28"
       >
         {proyectos.map((proyecto) => (
-          <SwiperSlide key={proyecto.id}>
+          <SwiperSlide key={proyecto.id} className="h-full">
             <article className="flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl shadow-md overflow-hidden">
 
               <div className="h-48 overflow-hidden rounded-t-2xl">
@@ -173,7 +171,7 @@ export const Proyectos = () => {
                 />
               </div>
 
-              <div className="px-6 pt-6 flex-grow">
+              <div className="px-6 pt-6">
                 <h4 className="mb-3 text-sm font-semibold text-gray-400 uppercase">
                   Tecnologías usadas
                 </h4>
@@ -198,13 +196,31 @@ export const Proyectos = () => {
                 </p>
               </div>
 
-              <div className="my-4 mx-6">
-                <a
-                  href={proyecto.link}
-                  className="text-sm text-blue-400 hover:underline"
-                >
-                  Ver proyecto →
-                </a>
+              <div className="flex-grow" />
+
+              <div className="flex gap-3 px-6 pb-6">
+                {proyecto.github && (
+                  <a
+                    href={proyecto.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Ver en GitHub"
+                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:border-[#8b5cf6]/40 hover:shadow-[0_0_15px_-8px_rgba(139,92,246,0.5)] transition-all duration-300 cursor-pointer"
+                  >
+                    <SiGithub className="text-lg" />
+                  </a>
+                )}
+                {proyecto.demo && (
+                  <a
+                    href={proyecto.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Ver Proyecto desplegado"
+                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:border-[#8b5cf6]/40 hover:shadow-[0_0_15px_-8px_rgba(139,92,246,0.5)] transition-all duration-300 cursor-pointer"
+                  >
+                    <HiExternalLink className="text-lg" />
+                  </a>
+                )}
               </div>
             </article>
           </SwiperSlide>
