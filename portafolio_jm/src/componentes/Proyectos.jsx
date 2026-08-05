@@ -12,6 +12,7 @@ import AppSalud from '../assets/AppSalud.png';
 import Game2D from '../assets/Game2D.png';
 import Game3D from '../assets/Game3D.png';
 import Agente from '../assets/Agente.png';
+import Ticket from '../assets/Ticket.png';
 
 export const Proyectos = () => {
 
@@ -31,6 +32,10 @@ export const Proyectos = () => {
     LangChain: 'text-teal-400 border-teal-500 bg-teal-900/30',
     LangGraph: 'text-purple-400 border-purple-500 bg-purple-900/30',
     RAG: 'text-indigo-400 border-indigo-500 bg-indigo-900/30',
+    Docker: 'text-sky-400 border-sky-500 bg-sky-900/30',
+    PHP: 'text-indigo-400 border-indigo-500 bg-indigo-900/30',
+    Laravel: 'text-red-400 border-red-500 bg-red-900/30',
+    MariaDB: 'text-amber-400 border-amber-500 bg-amber-900/30',
   };
 
   const proyectos = [
@@ -102,6 +107,14 @@ export const Proyectos = () => {
       description: 'Plataformero 2D en Unity donde controlas un robot explorando un entorno liminal con físicas, enemigos y sistema básico de combate.',
       techs: ['Unity', 'C#'],
       link: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity'
+    },
+    {
+      id: 9,
+      title: 'TicketFlow - Gestor CRUD Laravel',
+      image: Ticket,
+      description: 'Sistema de gestión de tickets (helpdesk) con Laravel 13, React 19 y Tailwind CSS v4 orquestado con Docker.',
+      techs: ['Laravel', 'React', 'MariaDB', 'Docker'],
+      link: 'https://github.com/JoakoMancilla/TicketFlow-MVP'
     },
   ];
 
