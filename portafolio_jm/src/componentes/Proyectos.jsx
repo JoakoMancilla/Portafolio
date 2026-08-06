@@ -8,7 +8,7 @@ import { SiGithub } from 'react-icons/si';
 import { HiExternalLink } from 'react-icons/hi';
 
 import Aexpress from '../assets/Aexpress.png';
-import PokeDex from '../assets/PokeDexV4.png';
+import PokeDex from '../assets/PokeDex.png';
 import Ejercito from '../assets/Ejercito.png';
 import Chocolate from '../assets/chocolate.png';
 import AppSalud from '../assets/AppSalud.png';
