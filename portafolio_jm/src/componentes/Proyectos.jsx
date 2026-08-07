@@ -16,6 +16,7 @@ import Game2D from '../assets/Game2D.png';
 import Game3D from '../assets/Game3D.png';
 import Agente from '../assets/Agente.png';
 import Ticket from '../assets/Ticket.png';
+import Gestor from '../assets/Gestor.png';
 
 export const Proyectos = () => {
 
@@ -52,6 +53,14 @@ export const Proyectos = () => {
     },
     {
       id: 2,
+      title: 'Gestor App',
+      image: Gestor,
+      description: 'Gestor de proyectos intuitivo para equipos pequeños, con tablero Kanban interactivo (drag & drop), dashboard de métricas y autenticación.',
+      techs: ['Laravel', 'React', 'MariaDB', 'Docker'],
+      github: 'https://github.com/JoakoMancilla/Gestor-APP',
+    },
+    {
+      id: 3,
       title: 'Diseño Web',
       image: Aexpress,
       description: 'Sitio corporativo para empresa de transporte, desarrollado en WordPress con Divi, enfocado en servicios, contacto y reservas.',
@@ -59,7 +68,7 @@ export const Proyectos = () => {
       demo: 'https://aeropuertoexpress.cl/',
     },
     {
-      id: 3,
+      id: 4,
       title: 'App DB Consola',
       image: Ejercito,
       description: 'Aplicación de consola en Python con MongoDB que permite registrar, buscar, editar y eliminar datos mediante operaciones CRUD.',
@@ -67,7 +76,7 @@ export const Proyectos = () => {
       github: 'https://github.com/JoakoMancilla/CRUD-EJERCITO',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Poke Dex',
       image: PokeDex,
       description: 'Pokédex interactiva en React que consume una API REST para buscar Pokémon y mostrar estadísticas e información detallada.',
@@ -76,7 +85,7 @@ export const Proyectos = () => {
       github: 'https://github.com/JoakoMancilla/Poke-Dex-React'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Tienda Chocolatería',
       image: Chocolate,
       description: 'Landing page para una chocolatería con catálogo visual de productos, diseño responsive y enfoque en presentación comercial.',
@@ -84,7 +93,7 @@ export const Proyectos = () => {
       github: 'https://github.com/JoakoMancilla/Landing-Chocolateria',
     },
     {
-      id: 6,
+      id: 7,
       title: 'App Gestión Salud',
       image: AppSalud,
       description: 'Sistema web en Django para gestión de usuarios y sesiones médicas, con autenticación y panel de administración.',
@@ -92,7 +101,7 @@ export const Proyectos = () => {
       github: 'https://github.com/JoakoMancilla/Proyecto_AppSalud',
     },
     {
-      id: 7,
+      id: 8,
       title: 'Last Stand Outpost - VideoGame',
       image: Game3D,
       description: 'Shooter 3D en Unity ambientado en una base militar infestada de zombies, con disparos, IA enemiga y supervivencia por oleadas.',
@@ -100,7 +109,7 @@ export const Proyectos = () => {
       github: 'https://github.com/JoakoMancilla/3D-Videogame---Zombie-Shooter',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Liminal ROBOT - VideoGame',
       image: Game2D,
       description: 'Plataformero 2D en Unity donde controlas un robot explorando un entorno liminal con físicas, enemigos y sistema básico de combate.',
@@ -108,7 +117,7 @@ export const Proyectos = () => {
       github: 'https://github.com/JoakoMancilla/2D-Pixel-Game-Unity',
     },
     {
-      id: 9,
+      id: 10,
       title: 'TicketFlow - Gestor CRUD Laravel',
       image: Ticket,
       description: 'Sistema de gestión de tickets (helpdesk) con Laravel 13, React 19 y Tailwind CSS v4 orquestado con Docker.',
