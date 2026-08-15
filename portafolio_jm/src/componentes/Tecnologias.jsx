@@ -26,7 +26,7 @@ const tecnologias = [
 
 export const Tecnologias = () => {
   return (
-    <section id='skills' className="px-8 py-16">
+    <section id='skills' className="scroll-mt-28 px-8 py-16">
       <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#c522a2] via-[#3b82f6] to-[#8b5cf6] bg-[length:200%_auto] bg-clip-text text-transparent animate-[shimmer_3s_linear_infinite]">
         Tecnologías usadas
       </h2>
