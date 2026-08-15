@@ -127,7 +127,7 @@ export const Proyectos = () => {
   ];
 
   return (
-    <section id="projects" className="px-6 py-16">
+    <section id="projects" className="scroll-mt-28 px-6 py-16">
       <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#c522a2] via-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent">
         Mis Proyectos
       </h2>
